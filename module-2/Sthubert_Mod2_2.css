@@ -1,0 +1,66 @@
+/* Isaac St Hubert Module 2.2 */
+
+
+/* Set base font size for html and body */
+html, body {
+    font-size: 16px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraph styles */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Intro paragraph */
+p.intro {
+    text-indent: 2em;
+}
+
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+
+span.sentence {
+    font-style: italic;
+}
+
+
+/* Address styling */
+p.address {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Website link styles */
+a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Website link hover effect */
+a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Website link visited effect */
+a:visited {
+    color: red;
+}
