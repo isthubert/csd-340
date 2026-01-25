@@ -1,0 +1,43 @@
+/* Isaac St Hubert Module 3.2 */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #f2f2f2;
+}
+
+/* Container styling */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Heading color scheme */
+h1, h2, h3, h4 {
+    background-color: #003366;
+    color: #ffffff;              
+    border: 1px solid #D6A800;   
+    padding: 10px;
+}
+
+/* Link styling */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+/* Hover effect */
+a:hover {
+    color: #D6A800;
+}
+
+/* Visited link color */
+a:visited {
+    color: #555555;
+}
