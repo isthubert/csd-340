@@ -1,0 +1,96 @@
+/* Isaac St Hubert Module 3.3 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Main heading h1 */
+#container h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+.left, .right {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.left {
+    margin-right: 5%;
+}
+
+/* Container for h3 + list together */
+.list-container {
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Solid red border for ordered list container */
+.solid-border {
+    border: 1px solid red;
+}
+
+/* Dashed red border for unordered list container */
+.dashed-border {
+    border: 1px dashed red;
+}
+
+/* h3 inside the border */
+.list-container h3 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Ordered list */
+.list-container ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* Unordered list */
+.list-container ul {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* Last div */
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Links */
+a {
+    color: #003366;
+    text-decoration: none;            /* Remove underline by default */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #D6A800;
+    text-decoration: underline;       /* Show underline on hover */
+}
+
+/* Visited links */
+a:visited {
+    color: #555555;
+}
