@@ -1,0 +1,67 @@
+/* Isaac St Hubert Module 4.2 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Image Gallery Grid Layout */
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+}
+
+/* Add borders around each grid item */
+#image-gallery > div {
+    border: 2px solid black;
+}
+
+/* Center main heading */
+h1 {
+    text-align: center;
+}
+
+/* Center image titles */
+h3 {
+    text-align: center;
+}
+
+/* Center images inside figure */
+figure {
+    text-align: center;
+}
+
+/* Figure captions */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+/* Last div */
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* Links */
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #D6A800;
+    text-decoration: underline;
+}
+
+/* Visited links */
+a:visited {
+    color: #555555;
+}
