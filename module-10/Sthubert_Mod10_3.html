@@ -1,0 +1,51 @@
+<!-- Isaac St Hubert Module 10.3 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        .clickable-image {
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+    </style>
+    <script>
+        /**
+         * Function that changes an image on the page when the user clicks on an image.
+         *
+         * @param imageId
+         * @param newImageSrc
+         */
+        function changeImage(imageId, newImageSrc) {
+            let imgElement = document.getElementById(imageId);
+            imgElement.src = newImageSrc;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <h2>Click an image to change it</h2>
+
+    <!-- First image -->
+    <img id="forest" class="clickable-image" 
+         src="forest_01.jpg" 
+         alt="Forest Scene"
+         onclick="changeImage('forest', 'forest_02.jpg');">
+
+    <!-- Second image -->
+    <img id="beach" class="clickable-image" 
+         src="beach_01.jpg" 
+         alt="Beach Scene"
+         onclick="changeImage('beach', 'beach_02.jpg');">
+
+</body>
+</html>
