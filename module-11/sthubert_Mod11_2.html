@@ -1,0 +1,76 @@
+<!-- Isaac St Hubert Module 11.2 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        // Array to store items
+        let todoList = [];
+
+        // Function to add an item
+        function addItem() {
+            let item = document.getElementById("itemInput").value;
+
+            if (item !== "") {
+                todoList.push(item);
+                alert(item + " was added to the list.");
+                document.getElementById("itemInput").value = "";
+                displayList();
+            }
+        }
+
+        // Function to delete the last item
+        function deleteLast() {
+            if (todoList.length > 0) {
+                let removedItem = todoList.pop();
+                alert(removedItem + " was deleted from the list.");
+                displayList();
+            } else {
+                alert("The list is empty.");
+            }
+        }
+
+        // Function to sort the array
+        function sortList() {
+            todoList.sort();
+            alert("The list has been sorted.");
+            displayList();
+        }
+
+        // Function to display the array contents
+        function displayList() {
+            let output = "<h3>Things To Do:</h3><ol>";
+
+            for (let i = 0; i < todoList.length; i++) {
+                output += "<li>" + todoList[i] + "</li>";
+            }
+
+            output += "</ol>";
+
+            document.getElementById("displayArea").innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+<p>Enter an item to add to your list:</p>
+
+<input type="text" id="itemInput">
+
+<button onclick="addItem()">Add</button>
+<button onclick="deleteLast()">Delete Last Entry</button>
+<button onclick="sortList()">Sort</button>
+
+<div id="displayArea"></div>
+
+</body>
+
+</html>
